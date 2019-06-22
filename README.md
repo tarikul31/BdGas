@@ -5,7 +5,7 @@ In this Application we try to deal with customer to provider or supplier directl
 If any user needs emergency gas cylinder, system will provides the nearest distributor with products details.
 User can choose the brand of cylinder with its weight category and directly communicate with distributor via online communication.
 
-#Using Technology
-*Java
-*Google Map API
-*Firebase Databse
+# Using Technology
+*Java,
+*Google Map API,
+*Firebase Databse,
