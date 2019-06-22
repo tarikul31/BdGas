@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operation.CustomerOrder"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:fontFamily="@font/archivo_black"
+            android:textColor="@color/colorPurple"
+            android:id="@+id/shopNameID"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/sp_Product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_baseColor="@color/colorWhite"
+                app:smsp_floatingLabelColor="@color/colorPurple"
+                app:smsp_highlightColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                app:smsp_arrowColor="@color/colorDeepAsh"
+                app:smsp_alignLabels="true"
+                app:smsp_alwaysShowFloatingLabel="true"
+                app:smsp_arrowSize="15dp"
+                app:smsp_hint="Product"
+                app:smsp_hintColor="@color/colorDeepAsh"
+                app:smsp_hintTextSize="14sp" />
+
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/sp_Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:smsp_baseColor="@color/colorWhite"
+                app:smsp_floatingLabelColor="@color/colorPurple"
+                app:smsp_highlightColor="@color/colorPrimary"
+                app:smsp_arrowColor="@color/colorBlack"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:smsp_arrowSize="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:padding="10dp"
+                app:smsp_hint="Category"
+                app:smsp_hintColor="@color/colorDeepAsh"
+                app:smsp_hintTextSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/spinner_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight=".60"
+                    android:layout_height="wrap_content"
+                    android:text="Unit Price"
+                    android:textColor="@color/colorBlack"
+                    android:padding="15dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvUnitPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".40"
+                    android:hint="Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:padding="15dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".4"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:text="Quantity" />
+
+                    <EditText
+                        android:id="@+id/orderQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:hint="2"
+                        android:inputType="number"
+                        android:background="@drawable/spinner_background"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Available"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvAvailAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:hint="8"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Info"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPurple"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/billName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/billContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <EditText
+                    android:id="@+id/billAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvTotalBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Total: 2000/-"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:background="@drawable/spinner_background"
+                    android:padding="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:text="Order"
+                android:textSize="15sp"
+                android:background="@drawable/edit_button"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btnOrderID"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

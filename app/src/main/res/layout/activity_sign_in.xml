@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context=".SignActivity.SignInActivity">
+
+    <LinearLayout
+        android:id="@+id/signInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/abril_fatface"
+                android:text="@string/sign_in"
+                android:padding="60dp"
+                android:textColor="@color/colorFront"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etUserNameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/cagliostro"
+            android:hint="@string/user_name"
+            android:inputType="textNoSuggestions"
+            android:padding="15dp"
+            android:textColor="@color/colorFront"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPasswordID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/cagliostro"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/colorFront"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignInId"
+            android:background="@drawable/edit_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorFront"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:fontFamily="@font/cagliostro"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/tvResetPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/david_libre"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="@string/reset_password"
+                android:textColor="@color/colorText"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tvCreateNew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/david_libre"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="@string/create"
+                android:textColor="#9e9e9e" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/resetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightAsh"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/resetEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:background="@drawable/custom_edit"
+            android:textColorHint="@color/colorDeepAsh"
+            android:textColor="@color/colorBlack"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:textSize="15sp"/>
+        <Button
+            android:id="@+id/btnResetSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_button"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/submit"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/back_button">
+            <TextView
+                android:id="@+id/tvBackReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/back_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

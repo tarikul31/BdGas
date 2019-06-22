@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/detailsID"
+    android:weightSum="4"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="@color/colorBtn"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Size"
+        android:textColor="@color/colorWhite"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/dSizeTV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/quantity"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/dQuantityTV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Price"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:id="@+id/dPriceTV"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:src="@drawable/ic_edit"
+            android:background="@color/colorDeepAsh"
+            android:layout_margin="2dp"
+            android:id="@+id/dBtnEdit"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete"
+            android:layout_weight=".5"
+            android:background="@color/colorDeepAsh"
+            android:layout_margin="2dp"
+            android:id="@+id/dBtnDelete"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

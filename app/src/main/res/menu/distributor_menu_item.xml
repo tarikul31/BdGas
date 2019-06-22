@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navDisProfileId"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+
+    <item android:id="@+id/navDisProductId"
+        android:icon="@drawable/ic_add_black"
+        android:title="Create Product"/>
+
+    <item android:id="@+id/navDisProductListId"
+        android:icon="@drawable/ic_add_black"
+        android:title="Product List"/>
+
+    <!--<item android:id="@+id/navDisQuery"-->
+        <!--android:icon="@drawable/ic_help_outline"-->
+        <!--android:title="Query"/>-->
+
+    <item android:id="@+id/navDisLogoutId"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+</menu>
